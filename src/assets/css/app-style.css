@@ -1,0 +1,493 @@
+
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+:root {
+	--bs-blue: #206bc4;
+	--bs-azure: #45aaf2;
+	--bs-indigo: #6574cd;
+	--bs-purple: #a55eea;
+	--bs-pink: #f66d9b;
+	--bs-red: #cd201f;
+	--bs-orange: #ff922b;
+	--bs-yellow: #fab005;
+	--bs-lime: #94d82d;
+	--bs-green: #5eba00;
+	--bs-teal: #2bcbba;
+	--bs-cyan: #17a2b8;
+	--bs-gray: #a8aeb7;
+	--bs-gray-dark: #545d6d;
+	--bs-dark: #354052;
+	--bs-primary: #206bc4;
+	--bs-secondary: #6e7582;
+	--bs-secondary-3: #c4c7cf;
+	--bs-success: #5eba00;
+	--bs-info: #45aaf2;
+	--bs-warning: #fab005;
+	--bs-danger: #cd201f;
+	--bs-light: #f5f7fb;
+	--bs-dark: #354052;
+	--bs-white: #fff;
+	--animate-delay: 2s;
+	--bs-font-sans-serif: "Ubuntu", system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+	--bs-font-monospace: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace
+}
+
+body {
+	margin: 0;
+	font-family: var(--bs-font-sans-serif);
+	font-size: .875rem;
+	font-weight: 400;
+	line-height: 1.7142857;
+	color: #354052;
+	background-color: #ffffff;
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: transparent;
+	height: 10vh;
+}
+
+*,
+::after,
+::before {
+	box-sizing: border-box;
+}
+
+.page-container {
+	padding: 10px;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.d-block {
+	display: block;
+}
+
+.d-none {
+	display: none;
+}
+
+.mouse {
+	cursor: pointer;
+}
+
+.w-100 {
+	width: 100%;
+}
+
+.w-90 {
+	width: 90%;
+}
+
+.w-80 {
+	width: 80%;
+}
+
+.w-70 {
+	width: 70%;
+}
+
+.w-60 {
+	width: 60%;
+}
+
+.w-50 {
+	width: 50%;
+}
+
+.w-40 {
+	width: 40%;
+}
+
+.w-30 {
+	width: 30%;
+}
+
+.w-20 {
+	width: 20%;
+}
+
+.w-10 {
+	width: 10%;
+}
+
+.mt-5 {
+	margin-top: 5px;
+}
+
+.mt-10 {
+	margin-top: 10px;
+}
+
+.mt-15 {
+	margin-top: 15px;
+}
+
+.mt-20 {
+	margin-top: 20px;
+}
+
+.mt-25 {
+	margin-top: 25px;
+}
+
+.mt-30 {
+	margin-top: 30px;
+}
+
+.mt-35 {
+	margin-top: 35px;
+}
+
+.mt-40 {
+	margin-top: 40px;
+}
+
+.mt-45 {
+	margin-top: 45px;
+}
+
+.mt-50 {
+	margin-top: 50px;
+}
+
+.ml-5 {
+	margin-left: 5px;
+}
+
+.ml-10 {
+	margin-left: 10px;
+}
+
+.ml-15 {
+	margin-left: 15px;
+}
+
+.ml-20 {
+	margin-left: 20px;
+}
+
+.ml-25 {
+	margin-left: 25px;
+}
+
+.ml-30 {
+	margin-left: 30px;
+}
+
+.ml-35 {
+	margin-left: 35px;
+}
+
+.ml-40 {
+	margin-left: 40px;
+}
+
+.ml-45 {
+	margin-left: 45px;
+}
+
+.ml-50 {
+	margin-left: 50px;
+}
+
+.mr-5 {
+	margin-right: 5px;
+}
+
+.mr-10 {
+	margin-right: 10px;
+}
+
+.mr-15 {
+	margin-right: 15px;
+}
+
+.mr-20 {
+	margin-right: 20px;
+}
+
+.mr-25 {
+	margin-right: 25px;
+}
+
+.mr-30 {
+	margin-right: 30px;
+}
+
+.mr-35 {
+	margin-right: 35px;
+}
+
+.mr-40 {
+	margin-right: 40px;
+}
+
+.mr-45 {
+	margin-right: 45px;
+}
+
+.mr-50 {
+	margin-right: 50px;
+}
+
+.mb-5 {
+	margin-bottom: 5px;
+}
+
+.mb-10 {
+	margin-bottom: 10px;
+}
+
+.mb-15 {
+	margin-bottom: 15px;
+}
+
+.mb-20 {
+	margin-bottom: 20px;
+}
+
+.mb-25 {
+	margin-bottom: 25px;
+}
+
+.mb-30 {
+	margin-bottom: 30px;
+}
+
+.mb-35 {
+	margin-bottom: 35px;
+}
+
+.mb-40 {
+	margin-bottom: 40px;
+}
+
+.mb-45 {
+	margin-bottom: 45px;
+}
+
+.mb-50 {
+	margin-bottom: 50px;
+}
+
+.p-5 {
+	padding: 5px;
+}
+
+.p-10 {
+	padding: 10px;
+}
+
+.p-15 {
+	padding: 15px;
+}
+
+.p-20 {
+	padding: 20px;
+}
+
+.p-25 {
+	padding: 25px;
+}
+
+.p-30 {
+	padding: 30px;
+}
+
+.p-35 {
+	padding: 35px;
+}
+
+.p-40 {
+	padding: 40px;
+}
+
+.p-45 {
+	padding: 45px;
+}
+
+.p-50 {
+	padding: 50px;
+}
+
+.small {
+	font-size: small;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-justify {
+	text-align: justify;
+}
+
+.text-capitalize {
+	text-transform: capitalize;
+}
+
+.f-s-10 {
+	font-size: 10px;
+}
+
+.f-s-10 {
+	font-size: 10px;
+}
+
+.f-s-11 {
+	font-size: 11px;
+}
+
+.f-s-12 {
+	font-size: 12px;
+}
+
+.f-s-13 {
+	font-size: 13px;
+}
+
+.f-s-14 {
+	font-size: 14px;
+}
+
+.f-s-15 {
+	font-size: 15px;
+}
+
+.f-s-16 {
+	font-size: 16px;
+}
+
+.f-s-17 {
+	font-size: 17px;
+}
+
+.f-s-18 {
+	font-size: 18px;
+}
+
+.f-s-19 {
+	font-size: 19px;
+}
+
+.f-s-20 {
+	font-size: 20px;
+}
+
+.f-s-21 {
+	font-size: 21px;
+}
+
+.f-s-22 {
+	font-size: 22px;
+}
+
+.f-s-23 {
+	font-size: 23px;
+}
+
+.f-s-24 {
+	font-size: 24px;
+}
+
+.f-s-25 {
+	font-size: 25px;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+.justify-content-flex-end {
+	justify-content: flex-end;
+}
+
+.text-white {
+	color: rgb(250, 250, 250);
+}
+
+.text-secondary {
+	color: rgb(181 181 181);
+}
+
+.text-primary {
+	color: #3f51b5
+}
+
+.text-muted {
+	color: rgb(110 117 130)!important;
+}
+
+.text-success {
+	color: var(--bs-success);
+}
+
+.text-warning {
+	color: var(--bs-warning);
+}
+
+.text-danger {
+	color: var(--bs-red);
+}
+
+.screen-logo-block {
+	margin-top: 25%;
+	position: absolute;
+	text-align: center;
+}
+
+.screen-centered {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.form-control {
+	height: 35px;
+	width: 100%;
+	font-size: 14px;
+	border: 1px solid rgb(107, 107, 107);
+	border-radius: 2px;
+	padding-left: 10px;
+}
+
+.form-control:focus {
+	outline-color: rgb(143, 143, 143)
+}
+
+.app-button:focus {
+	outline: unset;
+}
+
+.app-button {
+	background-color: #fff;
+	padding: 8px 18px 8px 18px;
+	border: 1px solid;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.app-button-primary {
+	background-color: var(--bs-primary);
+	color: var(--bs-white);
+	border-color: var(--bs-primary);
+}
+
+.app-button-default {
+	background-color: var(--bs-secondary-3);
+	color: var(--bs-gray-dark);
+	border-color: var(--bs-secondary-3);
+}
+

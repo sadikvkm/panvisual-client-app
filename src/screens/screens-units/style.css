@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(17, 17, 17);
+}
+.screen-unit {
+    border: 1px solid rgb(39, 39, 39);
+    
+}
+.full-screen-image {
+    width: 100%;
+    height: 100vh;
+}
+
+.video-contain {
+    /* position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%; */
+}
+
+.ads-video-container {
+    width: 100%;
+    height: 99vh;
+    object-fit: cover;
+}

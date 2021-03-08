@@ -2,19 +2,40 @@
   "name": "panvisual",
   "productName": "panvisual",
   "version": "1.0.0",
-  "description": "My Electron application description",
+  "description": "PANIN VISUAL TECHNOLOGIES",
   "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
+    "deploy": "electron-builder build --linux --publish always",
+    "build": "electron-builder build --linux",
     "lint": "echo \"No linting configured\""
   },
   "keywords": [],
   "author": {
-    "name": "Sadik",
-    "email": "sadik@syntrio.in"
+    "name": "Mohammed sadik vk",
+    "email": "sadikvkm123@gmail.com"
+  },
+  "build": {
+    "appId": "com.panvisual.desktop.app.client.id",
+    "productName": "panvisual",
+    "publish": [
+      {
+        "provider": "github",
+        "repo": "panvisual-client-app",
+        "owner": "sadikvkm"
+      }
+    ],
+    "linux": {
+      "category": "Utils",
+      "packageCategory": "utils",
+      "maintainer": "Sadik <sadikvkm123@gmail.com>",
+      "target": [
+        "AppImage"
+      ]
+    }
   },
   "license": "MIT",
   "config": {
@@ -45,7 +66,17 @@
     }
   },
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.0"
+    "aws-sdk": "^2.858.0",
+    "axios": "^0.21.1",
+    "child_process": "^1.0.2",
+    "electron-dl": "^3.2.0",
+    "electron-fetch": "^1.7.3",
+    "electron-log": "^4.3.2",
+    "electron-squirrel-startup": "^1.0.0",
+    "electron-updater": "^4.3.5",
+    "node-machine-id": "^1.1.12",
+    "socket.io-client": "^3.1.1",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "@electron-forge/cli": "^6.0.0-beta.54",
@@ -53,6 +84,7 @@
     "@electron-forge/maker-rpm": "^6.0.0-beta.54",
     "@electron-forge/maker-squirrel": "^6.0.0-beta.54",
     "@electron-forge/maker-zip": "^6.0.0-beta.54",
-    "electron": "11.3.0"
+    "electron": "11.3.0",
+    "electron-builder": "^22.9.1"
   }
 }

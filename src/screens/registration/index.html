@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Registration</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="../../assets/css/app-style.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='./styles.css'>
+</head>
+<body>
+    <div class="p-20">
+        <div class="mt-10 text-left">
+            <div class="f-s-20">Enter registration key</div>
+            <div class="mt-20">You are about to register this client to the Panin administration cloud.</div>
+            <div class="">Please enter the registration key received in your email.</div>
+        </div> 
+        <div class="mt-30">
+            <div>Enter product key</div>
+            <input value="" id="product-input" class="form-control" placeholder="Application product key" />
+            <div id="error-input" class="text-danger"></div>
+        </div>
+        <div style="position: absolute;right: 20px;bottom: 20px;">
+            <button id="close-application" class="app-button app-button-default">Close</button>
+            <button id="submit-button" class="app-button app-button-primary">Submit</button>
+        </div>
+    </div>
+    <script src='./index.js'></script>
+</body>
+</html>
